@@ -11,4 +11,8 @@ public class Product {
     this.name=name;
     this.quantity=quantity;
   }
+
+  public int getId() { return id; }
+  public String getName() { return name; }
+  public int getQuantity() { return quantity; }
 }

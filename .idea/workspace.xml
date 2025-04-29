@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37773f73-9a85-46ac-bf40-5d0ae9e38703" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/task/collection/AttendanceStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/collection/AttendanceStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/collection/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/collection/Collection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/collection/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/collection/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/collection/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/collection/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/collection/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/collection/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/collection/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/collection/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task/generics/Generics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task/generics/Generics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,21 +35,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Ольга/IdeaProjects/Core2/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ольга/IdeaProjects/Core2/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Core-2" />
@@ -83,6 +77,7 @@
       <workItem from="1745689935959" duration="516000" />
       <workItem from="1745690482301" duration="90000" />
       <workItem from="1745690582083" duration="42000" />
+      <workItem from="1745694731334" duration="408000" />
     </task>
     <servers />
   </component>

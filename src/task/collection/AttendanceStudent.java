@@ -6,8 +6,15 @@ public class AttendanceStudent {
 
   public AttendanceStudent(String name, String attendance) {
     this.name = name;
-    this.attendance=attendance;
+    this.attendance = attendance;
 
   }
 
+  public String getName() {
+    return name;
+  }
+
+  public String getAttendance() {
+    return attendance;
+  }
 }

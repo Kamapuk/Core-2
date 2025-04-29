@@ -86,13 +86,13 @@ public class Collection {
   public void printOrdersWithMaxAmount(List<Order> orders) {
     int maxAmount = 0;
     for(Order order: orders){
-      if(order.totalAmount>maxAmount){
-        maxAmount=order.totalAmount;
+      if(order.getTotalAmount()>maxAmount){
+        maxAmount=order.getTotalAmount();
       }
     }
     for(Order order: orders){
-      if(order.totalAmount==maxAmount){
-        System.out.println("Order ID: "+order.id+" Customer: "+order.customer+" Total Amount: "+order.totalAmount);
+      if(order.getTotalAmount()==maxAmount){
+        System.out.println("Order ID: "+order.getId()+" Customer: "+order.getCustomer()+" Total Amount: "+order.getTotalAmount());
       }
     }
 
@@ -101,7 +101,7 @@ public class Collection {
   public int getTotalAmountOfOrders(List<Order> orders) {
     int sumAmount = 0;
     for(Order order: orders){
-      sumAmount+=order.totalAmount;
+      sumAmount+=order.getTotalAmount();
     }
 
     return sumAmount;
@@ -110,7 +110,7 @@ public class Collection {
   public void printIncompleteTasks(List<Task> tasks) {
     for(Task task: tasks){
       if(task.isCompleted==false){
-        System.out.println("ID: "+task.id+" Title: "+task.title+" IsCompleted: "+task.isCompleted);
+        System.out.println("ID: "+task.getId()+" Title: "+task.getTitle()+" IsCompleted: "+task.getIsCompleted());
       }
     }
   }
@@ -118,7 +118,7 @@ public class Collection {
   public List<Task> getTasksByTitle(List<Task> tasks, String title) {
     List<Task> result = new ArrayList<>();
     for(Task task: tasks){
-      if(task.title==title){
+      if(title.equals(task.getTitle())){
         result.add(task);
       }
     }
@@ -127,14 +127,14 @@ public class Collection {
 
   public void printStudents(List<Student> students) {
     for(Student student:students){
-      System.out.println("Name: "+student.name+" Age: "+student.age);
+      System.out.println("Name: "+student.getName()+" Age: "+student.getAge());
     }
   }
 
   public List<Student> getStudentsOlderThan(List<Student> students, int age) {
     List<Student> result = new ArrayList<>();
     for(Student student:students){
-      if(student.age>age){
+      if(student.getAge()>age){
         result.add(student);
       }
     }
@@ -143,8 +143,8 @@ public class Collection {
 
   public void printProductsWithZeroQuantity(List<Product> products) {
     for(Product product: products){
-      if(product.quantity==0){
-        System.out.println("ID: "+product.id+" Name: "+product.name+" Quantity: "+product.quantity);
+      if(product.getQuantity()==0){
+        System.out.println("ID: "+product.getId()+" Name: "+product.getName()+" Quantity: "+product.getQuantity());
       }
     }
   }
@@ -152,7 +152,7 @@ public class Collection {
   public int getTotalQuantityOfProducts(List<Product> products) {
     int sumQuantity=0;
     for(Product product:products){
-      sumQuantity+=product.quantity;
+      sumQuantity+=product.getQuantity();
     }
     return sumQuantity;
   }
@@ -161,7 +161,7 @@ public class Collection {
     List<Integer> badAttendance = new ArrayList<>();
     int worstAttendance = 0;
     for(AttendanceStudent attendanceStudent: students){
-      int studentAttendance = Integer.parseInt(attendanceStudent.attendance);
+      int studentAttendance = Integer.parseInt(attendanceStudent.getAttendance());
       badAttendance.add(studentAttendance);
       for(Integer i: badAttendance){
         if(i>studentAttendance){
@@ -171,9 +171,9 @@ public class Collection {
 
     }
     for(AttendanceStudent attendanceStudent: students){
-      int as = Integer.parseInt(attendanceStudent.attendance);
+      int as = Integer.parseInt(attendanceStudent.getAttendance());
       if(as==worstAttendance){
-        System.out.println("Name: "+attendanceStudent.name +" Attendance: "+attendanceStudent.attendance);
+        System.out.println("Name: "+attendanceStudent.getName() +" Attendance: "+attendanceStudent.getAttendance());
       }
 
     }
@@ -183,9 +183,9 @@ public class Collection {
     int counter = 0;
     int sumAttendance = 0;
     for(AttendanceStudent attendanceStudent: students){
-      sumAttendance+=Integer.parseInt(attendanceStudent.attendance);
+      sumAttendance+=Integer.parseInt(attendanceStudent.getAttendance());
       counter+=1;
     }
-    return sumAttendance/counter;
+    return (double) sumAttendance/counter;
   }
 }

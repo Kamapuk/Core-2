@@ -10,4 +10,8 @@ public class Order {
     this.customer=customer;
     this.totalAmount=totalAmount;
   }
+
+  public int getId() { return id; }
+  public String getCustomer() { return customer; }
+  public int getTotalAmount() { return totalAmount; }
 }

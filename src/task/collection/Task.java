@@ -13,12 +13,12 @@ public class Task {
 
   @Override
   public boolean equals(Object o) {
-    if (this == o) return true; // Если сравниваем с самим собой
-    if (o == null || getClass() != o.getClass()) return false; // Проверка типа
-    Task task = (Task) o; // Приведение типов
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    Task task = (Task) o;
     return id == task.id &&
             isCompleted == task.isCompleted &&
-            Objects.equals(title, task.title); // Сравнение полей
+            Objects.equals(title, task.title);
   }
 
   @Override
@@ -34,4 +34,8 @@ public class Task {
             ", isCompleted=" + isCompleted +
             '}';
   }
+
+  public int getId() { return id; }
+  public String getTitle() { return title; }
+  public boolean getIsCompleted() { return isCompleted; }
 }
